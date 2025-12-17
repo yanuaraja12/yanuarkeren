@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Georgia', serif; 
+            background-image: url(gambar/pahlawan\ himmel\ aja.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            color: #333;
+            animation: fadeIn 1s ease-in-out; 
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .nav {
+            background: linear-gradient(90deg, #6a5acd, #4b0082); 
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            border-bottom: 2px solid #87ceeb;
+            display: flex; 
+            justify-content: center;
+            align-items: center; 
+            
+        }
+        .nav a {
+            color: #ffffff;
+            text-decoration: none;
+            padding: 18px 26px;
+            display: block;
+            float: left;
+            font-weight: bold;
+            font-size: 16px;
+            transition: all 0.4s ease;
+            letter-spacing: 1px;
+        }
+        .nav a:hover {
+            color: #000;
+            background-color: rgba(135, 206, 235, 0.8);
+            transform: translateY(-3px) scale(1.05);
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+        }
+        .active {
+            background-color: rgba(75, 0, 130, 0.9);
+            border-bottom: 3px solid #87ceeb;
+        }
+        .content {
+            width: 90%;
+            max-width: 1100px;
+            padding: 40px;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            margin: 50px auto;
+            border-radius: 20px;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+            line-height: 1.8;
+            font-size: 18px;
+            letter-spacing: 0.5px;
+            animation: slideUp 1.2s ease-out;
+        }
+        @keyframes slideUp {
+            from { transform: translateY(50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        .content img {
+            width: 100%;
+            max-width: 450px;
+            float: left;
+            padding-right: 25px;
+            margin-bottom: 25px;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+            transition: transform 0.3s ease;
+        }
+        .content img:hover {
+            transform: scale(1.05); 
+        }
+        .content h1 {
+            color: #4b0082;
+            font-family: 'Times New Roman', serif;
+            font-size: 3em;
+            margin-bottom: 25px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+            text-align: center;
+            border-bottom: 2px solid #6a5acd;
+            padding-bottom: 10px;
+        }
+        .content p {
+            margin-bottom: 20px;
+            text-align: justify;
+            padding: 0 10px;
+        }
+        .content strong {
+            color: #6a5acd;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+        @media (max-width: 768px) {
+            .content {
+                width: 95%;
+                padding: 25px;
+                font-size: 16px;
+            }
+            .content img {
+                float: none;
+                width: 100%;
+                padding-right: 0;
+                margin-bottom: 20px;
+            }
+            .content h1 {
+                font-size: 2.2em;
+            }
+            .nav a {
+                padding: 14px 18px;
+                font-size: 14px;
+            }
+        }
+        @media (max-width: 480px) {
+            .content h1 {
+                font-size: 1.8em;
+            }
+            .content {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <a href="rumah.html" class="active">rumah</a>
+        <a href="profile.html">profile</a>
+        <a href="album.html">album</a>
+        <a href="contact.html">contact</a>
+    </div>
+    <div class="content">
+        <img src="gambar/himmel new.jpg">
+        <h1>KISAH PAHLAWAN HIMMEL</h1>
+        <p>Himmel adalah seorang pahlawan legendaris dari seri Frieren: Beyond Journey's End yang memimpin Partai Pahlawan untuk mengalahkan Raja Iblis. Ia dikenal karena kecepatan, taktik, dan karisma-nya, yang berhasil meyakinkan Frieren untuk bergabung dengan ekspedisi mereka. Meski tidak pernah berhasil mencabut "Pedang Pahlawan" dari batu, ia tetap dihormati karena keberaniannya dan kepemimpinannya dalam mengalahkan Raja Iblis, serta rasa kemanusiaannya yang mendalam.</p>
+        <h1>Perjalanan pahlawan himmel mengalahkan raja Iblis</h1>
+        <p><strong>Pembentukan partai:</strong> usia 16 tahun, Himmel memulai perjalanan untuk mengalahkan Raja Iblis dan berhasil merekrut penyihir Frieren, serta pendeta Heiter dan ksatria kerdil Eisen.</p>
+        <p><strong> Kepemimpinan yang meyakinkan: </strong>Himmel memiliki karisma luar biasa. Ia meyakinkan Frieren yang awalnya enggan untuk bergabung dengan menjanjikan petualangan baru dan keajaiban di masa depan, bukan hanya masa lalu.</p>
+        <p><strong> Mengalahkan Raja Iblis:</strong> Bersama partainya, Himmel berhasil mengalahkan Raja Iblis, menjadikannya pahlawan legendaris yang dihormati oleh rakyat.</p>
+        <p><strong> Kegagalan dengan Pedang Pahlawan: </strong> kisah kepahlawanannya terkenal, Himmel sebenarnya gagal mencabut Pedang Pahlawan dari batu. Ia dan teman-temannya merahasiakan hal ini demi kehormatan sang pahlawan.</p>
+    </div>
+</body>
+</html>
